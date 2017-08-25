@@ -1,0 +1,8 @@
+Best results so far:
+--psm 6 works best
+Images like test2.png, test7.png, vascotest5.png work best
+e.g.: best results so far have come from
+'tesseract test2.png out --psm 6'
+perfect readability in that case for the basic post-match stats
+
+Further testing required for other screens
