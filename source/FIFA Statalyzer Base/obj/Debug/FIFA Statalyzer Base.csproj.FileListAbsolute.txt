@@ -13,3 +13,33 @@ C:\Users\Gringo\documents\visual studio 2017\Projects\FIFA Statalyzer Base\FIFA 
 C:\Users\Gringo\documents\visual studio 2017\Projects\FIFA Statalyzer Base\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.csprojResolveAssemblyReference.cache
 C:\Users\Gringo\documents\visual studio 2017\Projects\FIFA Statalyzer Base\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.exe
 C:\Users\Gringo\documents\visual studio 2017\Projects\FIFA Statalyzer Base\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.pdb
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.csprojResolveAssemblyReference.cache
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.exe
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.pdb
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\liblept172.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\libtesseract304.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\liblept172.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\libtesseract304.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\FIFA Statalyzer Base.exe.config
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\FIFA Statalyzer Base.exe
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\FIFA Statalyzer Base.pdb
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\EntityFramework.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\System.Data.SQLite.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\Tesseract.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\EntityFramework.xml
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\System.Data.SQLite.xml
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\Tesseract.xml
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.bigrams
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.fold
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.lm
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.nn
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.params
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.size
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.word-freq
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.tesseract_cube.nn
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.traineddata
