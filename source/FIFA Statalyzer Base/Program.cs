@@ -15,10 +15,17 @@ namespace FIFA_Statalyzer_Base
 
         static void Main(string[] args)
         {
+#if DEBUG
+            args = new[] { @"C:\test" };
+#endif
+            string folderPath = args[0];
+            string[] fileList = Directory.GetFiles(folderPath, "*.png");
             var dbConnection = DBManagement.InitializeDB();
-            Console.WriteLine(OCR.ReadImage(@"C:\test2.png"));
-            Console.ReadLine();
+            foreach(string file in fileList)
+            {
+                string ocr = (OCR.ReadImage(file));
+                Console.ReadLine();
+            }
         }
-        
     }
 }

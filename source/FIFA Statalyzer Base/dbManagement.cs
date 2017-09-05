@@ -26,6 +26,13 @@ public class DBManagement
         SQLiteCommand sqlcommand = new SQLiteCommand(command, dbConnection);
         sqlcommand.ExecuteNonQuery();
     }
+
+    public static SQLiteDataReader ExecuteReader(string command, SQLiteConnection dbConnection)
+    {
+        SQLiteCommand sqlcommand = new SQLiteCommand(command, dbConnection);
+        return sqlcommand.ExecuteReader();
+    }
+    
 }
 
 
