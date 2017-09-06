@@ -20,7 +20,7 @@ namespace FIFA_Statalyzer_Base
             args = new[] { @"C:\test\active" };
 #endif
             //Sets default path if none is specified
-            if (args.Length == 0)
+            if (args == null || args.Length == 0)
             {
                 args = new[] { Directory.GetCurrentDirectory() + @"\images\processed\" };
             }
