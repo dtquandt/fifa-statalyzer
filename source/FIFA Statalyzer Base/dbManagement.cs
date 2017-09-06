@@ -18,6 +18,7 @@ public class DBManagement
         }
         dbConnection = new SQLiteConnection("Data Source =FifaStatalyzer.sqlite;Version=3;");
         dbConnection.Open();
+        ExecuteNonQuery(File.ReadAllText(Directory.GetCurrentDirectory()+@"\cfg\dbconfig.txt"), dbConnection);
         return dbConnection;
     }
 

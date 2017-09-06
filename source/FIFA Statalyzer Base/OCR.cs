@@ -1,6 +1,7 @@
 ﻿using System;
 using Tesseract;
 using System.IO;
+using System.Text.RegularExpressions;
 
 public class OCR
 {
@@ -17,5 +18,14 @@ public class OCR
                 }
             }
         }
+    }
+
+    public static string CleanUp(string ocr)
+    {
+        ocr = ocr.Replace("\n", " ");
+        ocr = ocr.Trim();
+        ocr = Regex.Replace(ocr, "[^0-9 ]", "");
+        ocr = Regex.Replace(ocr, @"\s+", " ");
+        return ocr;
     }
 }
