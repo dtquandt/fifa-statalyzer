@@ -3,8 +3,10 @@ C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\images\processed\ADD PNG FILES HERE.txt
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\liblept172.dll
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\libtesseract304.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\liblept172.dll
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\libtesseract304.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\SQLite.Interop.dll
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.bigrams
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.fold
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\tessdata\eng.cube.lm
@@ -32,5 +34,6 @@ C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.application
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.exe
 C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.pdb
-C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x64\SQLite.Interop.dll
-C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA_Statalyzer_Base.Properties.Resources.resources
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.csproj.GenerateResource.Cache
+C:\Users\Gringo\Documents\repos\fifa-statalyzer\source\FIFA Statalyzer Base\obj\Debug\FIFA Statalyzer Base.csprojResolveAssemblyReference.cache

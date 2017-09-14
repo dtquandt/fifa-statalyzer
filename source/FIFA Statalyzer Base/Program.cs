@@ -22,7 +22,7 @@ namespace FIFA_Statalyzer_Base
             //Sets default path if none is specified
             if (args == null || args.Length == 0)
             {
-                args = new[] { Directory.GetCurrentDirectory() + @"\images\processed\" };
+                args = new[] { @".\images\processed\" };
             }
             //Sets working path
             string folderPath = args[0]; 
@@ -31,7 +31,7 @@ namespace FIFA_Statalyzer_Base
             foreach (string file in fileList)
             {
                 Dictionary<string, int> statsDict = new Dictionary<string, int>();
-                string[] legend = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\cfg\legend.txt");
+                string[] legend = File.ReadAllLines(@".\cfg\legend.txt");
                 string ocrResult = (OCR.ReadImage(file));
                 string ocrClean = OCR.CleanUp(ocrResult);
                 string[] ocrValues = ocrClean.Split(' ');
