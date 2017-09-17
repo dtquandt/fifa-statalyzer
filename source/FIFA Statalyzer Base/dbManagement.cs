@@ -67,6 +67,7 @@ public class DBManagement
                     }
                     File.WriteAllText(@".\dbdump.txt", sb.ToString());
                     Console.WriteLine("Database 'fifa' dumped to text file.");
+                    Console.WriteLine("File located at " + Directory.GetCurrentDirectory() + @"\dbdump.txt");
                 }
             }
         }
@@ -88,11 +89,9 @@ public class DBManagement
                 sure = 1;
                 ExecuteNonQuery(@"DROP TABLE 'fifa';", dbConnection);
                 Console.WriteLine("Database cleared.");
-                Console.ReadLine();
             } else if (answer == "N" || answer == "n")
             {
                 Console.WriteLine("Database clear canceled.");
-                Console.ReadLine();
                 break;
             } else
             {

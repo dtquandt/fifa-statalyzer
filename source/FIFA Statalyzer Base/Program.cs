@@ -16,16 +16,30 @@ namespace FIFA_Statalyzer_Base
 
         static void Main(string[] args)
         {
-#if DEBUG
-            args = new[] { @"C:\test\active" };
-#endif
-            //Sets default path if none is specified
+
+            #if DEBUG
+            args = new[] { @"dump" };
+            #endif
+
+            // default path if none is specified
             if (args == null || args.Length == 0)
             {
                 args = new[] { @".\images\processed\" };
             }
-            //Sets working path
-            string folderPath = args[0]; 
+            if (args[0] == "dump" || args[0] == "DUMP")
+            {
+                DBManagement.DumpToText(DBManagement.InitializeDB());
+            }
+            else if (args[0] == "clear" || args[0] == "CLEAR")
+            {
+                DBManagement.ClearDB(DBManagement.InitializeDB());
+            }
+            else ScanIntoDB(args[0]);
+            Console.ReadLine();
+        }
+
+        static void ScanIntoDB(string folderPath)
+        {
             string[] fileList = Directory.GetFiles(folderPath, "*.png");
             SQLiteConnection dbConnection = DBManagement.InitializeDB();
             foreach (string file in fileList)
@@ -66,7 +80,6 @@ namespace FIFA_Statalyzer_Base
                 string sqlCommand = commandBuilder.ToString();
                 DBManagement.ExecuteNonQuery(sqlCommand, dbConnection);
             }
-            Console.ReadLine();
         }
     }
 }
