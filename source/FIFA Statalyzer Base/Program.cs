@@ -41,6 +41,7 @@ namespace Statalyzer
             else ScanIntoDB(args[0]);
             DBManagement.DumpToText(DBManagement.InitializeDB());
             DBManagement.ClearDB(DBManagement.InitializeDB());
+            Console.WriteLine("All done! Thanks for using Fifa Statalyzer! Press Enter to exit.");
             Console.ReadLine();
         }
 
