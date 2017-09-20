@@ -1,6 +1,9 @@
 # fifa-statalyzer
 Tool for scraping statistics from FIFA post-match screenshots
 
+0.1.0 Download link:
+www.mediafire.com/file/hq0xp0va38cw205/Fifa+Statalyzer+0.1.0.zip
+
 Installation:
 Unzip the download and make sure you have .NET Framework installed!
 https://www.microsoft.com/net/download/framework
