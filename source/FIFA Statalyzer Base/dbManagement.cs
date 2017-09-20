@@ -65,9 +65,9 @@ public class DBManagement
                         sb.Length--;
                         sb.Append("\n");
                     }
-                    File.WriteAllText(@".\dbdump.txt", sb.ToString());
+                    File.WriteAllText(@".\stats.txt", sb.ToString());
                     Console.WriteLine("Database 'fifa' dumped to text file.");
-                    Console.WriteLine("File located at " + Directory.GetCurrentDirectory() + @"\dbdump.txt");
+                    Console.WriteLine("File located at " + Directory.GetCurrentDirectory() + @"\stats.txt");
                 }
             }
         }

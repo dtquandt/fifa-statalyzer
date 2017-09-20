@@ -8,7 +8,7 @@ using System.IO;
 using System.Data.SQLite;
 using Tesseract;
 
-namespace FIFA_Statalyzer_Base
+namespace Statalyzer
 {
 
     class Program
