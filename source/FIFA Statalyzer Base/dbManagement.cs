@@ -40,7 +40,7 @@ public class DBManagement
         SQLiteDataReader reader;
         string strDelimiter = ",";
         try
-        { 
+        {
             using (reader = new SQLiteCommand(query, dbConnection).ExecuteReader())
             {
                 if (reader.HasRows)
@@ -71,32 +71,39 @@ public class DBManagement
                 }
             }
         }
-        catch (Exception e){
-        Console.WriteLine(e);
-        Console.ReadLine();
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            Console.ReadLine();
         };
+        dbConnection.Close();
     }
 
     public static void ClearDB(SQLiteConnection dbConnection)
     {
-        int sure = 0;
+        int sure = 1;
+        ExecuteNonQuery(@"DROP TABLE 'fifa';", dbConnection);
+        Console.WriteLine("Database cleared.");
         while (sure == 0)
         {
-            Console.WriteLine("Are you sure you wish to clear the database? (Y/N)");
+            Console.WriteLine("Do you wish to clear the database? (Y/N)");
             string answer = Console.ReadLine();
             if (answer == "Y" || answer == "y")
             {
                 sure = 1;
                 ExecuteNonQuery(@"DROP TABLE 'fifa';", dbConnection);
                 Console.WriteLine("Database cleared.");
-            } else if (answer == "N" || answer == "n")
+            }
+            else if (answer == "N" || answer == "n")
             {
                 Console.WriteLine("Database clear canceled.");
                 break;
-            } else
+            }
+            else
             {
-                Console.WriteLine("Invalid answer. Enter Y or N."); 
+                Console.WriteLine("Invalid answer. Enter Y or N.");
             }
         }
+        dbConnection.Close();
     }
 }

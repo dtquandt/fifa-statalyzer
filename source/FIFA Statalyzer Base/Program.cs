@@ -17,14 +17,14 @@ namespace FIFA_Statalyzer_Base
         static void Main(string[] args)
         {
 
-            #if DEBUG
-            args = new[] { @"dump" };
-            #endif
+#if DEBUG
+            args = new[] { @"C:\test\active" };
+#endif
 
             // default path if none is specified
             if (args == null || args.Length == 0)
             {
-                args = new[] { @".\images\processed\" };
+                args = new[] { @".\images\" };
             }
             if (args[0] == "dump" || args[0] == "DUMP")
             {
@@ -34,19 +34,28 @@ namespace FIFA_Statalyzer_Base
             {
                 DBManagement.ClearDB(DBManagement.InitializeDB());
             }
+            else if (args[0] == "process" || args[0] == "PROCESS")
+            {
+                ImageProcessing.ProcessScreenshot(@"C:\test\img\img.png");
+            }
             else ScanIntoDB(args[0]);
+            DBManagement.DumpToText(DBManagement.InitializeDB());
+            DBManagement.ClearDB(DBManagement.InitializeDB());
             Console.ReadLine();
         }
 
         static void ScanIntoDB(string folderPath)
         {
+            Console.WriteLine("Welcome to FIFA Statalyzer.");
+            Console.WriteLine("Processing screenshots located in " + folderPath);
             string[] fileList = Directory.GetFiles(folderPath, "*.png");
             SQLiteConnection dbConnection = DBManagement.InitializeDB();
             foreach (string file in fileList)
             {
+                string processedFile = ImageProcessing.ProcessScreenshot(file);
                 Dictionary<string, int> statsDict = new Dictionary<string, int>();
                 string[] legend = File.ReadAllLines(@".\cfg\legend.txt");
-                string ocrResult = (OCR.ReadImage(file));
+                string ocrResult = (OCR.ReadImage(processedFile));
                 string ocrClean = OCR.CleanUp(ocrResult);
                 string[] ocrValues = ocrClean.Split(' ');
                 for (int i = 0; i < ocrValues.Length; i++)
@@ -60,6 +69,7 @@ namespace FIFA_Statalyzer_Base
                 else if (hGoals > aGoals) { result = 1; } // Home win
                 else if (hGoals < aGoals) { result = 2; } // Away win
                 statsDict.Add("result", result);
+                Console.WriteLine("Inserting these values into DB:");
                 foreach (var pair in statsDict)
                 {
                     Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
@@ -79,7 +89,10 @@ namespace FIFA_Statalyzer_Base
                 commandBuilder.Append(");");
                 string sqlCommand = commandBuilder.ToString();
                 DBManagement.ExecuteNonQuery(sqlCommand, dbConnection);
+                Console.WriteLine("Results inserted.");
             }
+            dbConnection.Close();
+            Console.WriteLine("All images processed.");
         }
     }
 }
